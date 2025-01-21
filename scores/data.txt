@@ -1,1 +1,98 @@
-test with new working enviroment
+LODWICK_UI Library Tutorial
+In this tutorial, you’ll learn how to use the LODWICK_UI library to underline words and perform word-based maths operations on your pages.
+
+1. Including the LODWICK_UI Library
+First, include the lodwick_ui.js file in your HTML page:
+
+
+        <script src="lodwick_ui.js"></script>
+    
+2. Underlining Words
+To underline specific words in an HTML element, you can use the LODWICK_UI() function with the desired element’s selector.
+
+Here’s an example of underlining words and toggling their highlight on click:
+
+HTML Code:
+
+        <div id="demo2">
+            Here we will test the word-based selection and manipulation.
+        </div>
+    
+JavaScript Code:
+
+        LODWICK_UI('#demo2', 'words').css('color', 'red').on('click', function() {
+            let x = this;
+            x.classList.toggle('highlight');
+            // Underline word dynamically
+            LODWICK_UI().underlineWord(x);
+        });
+    
+Example:
+Here we will test the word-based selection and manipulation.
+3. Word Counting and Positioning
+You can also use the LODWICK_UI.maths() function to count the number of repeated words and display their positions in a text.
+
+Here’s how you can apply it:
+
+HTML Code:
+
+        <div id="demo3">
+            We repeat words so that we are able to count the number of repeated words, words, words and the positions.
+        </div>
+        <div id="count">
+            <!-- Count and position info will appear here -->
+        </div>
+    
+JavaScript Code:
+
+        LODWICK_UI.maths('#demo3');
+    
+Example:
+We repeat words so that we are able to count the number of repeated words, words, words and the positions.
+4. Final Full Example
+Here’s a full example that combines everything:
+
+HTML and JavaScript Code:
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>LODWICK_UI Maths and Underline Demo</title>
+            <style>
+                .highlight {
+                    background-color: yellow;
+                }
+                .word {
+                    cursor: pointer;
+                }
+            </style>
+        </head>
+        <body>
+            <div id="demo">
+                Here we will test the word-based selection and manipulation.
+            </div>
+            <div id="demo2">
+                Here we will test the word-based selection and manipulation.
+            </div>
+            <div id="demo3">
+                We repeat words so that we are able to count the number of repeated words, words, words and the positions.
+            </div>
+            <div id="count"></div>
+
+            <script src="lodwick_ui.js"></script>
+            <script>
+                // Underlining words and adding click functionality
+                LODWICK_UI('#demo2', 'words').css('color', 'red').on('click', function() {
+                    let x = this;
+                    x.classList.toggle('highlight');
+                    LODWICK_UI().underlineWord(x);
+                });
+
+                // Counting word repetitions and positions
+                LODWICK_UI.maths('#demo3');
+            </script>
+        </body>
+        </html>
+    
