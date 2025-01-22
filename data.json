@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "title": "Example Title 1",
+      "thumbnail": "https://example.com/image1.jpg",
+      "extract": "This is the first article's brief description.",
+      "link": "https://example.com/article1"
+    },
+    {
+      "title": "Example Title 2",
+      "thumbnail": "",
+      "extract": "This is the second article's brief description.",
+      "link": "https://example.com/article2"
+    },
+    {
+      "title": "Example Title 3",
+      "thumbnail": "https://example.com/image3.jpg",
+      "extract": "This is the third article's brief description.",
+      "link": "https://example.com/article3"
+    }
+  ]
+}
