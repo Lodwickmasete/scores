@@ -13,10 +13,31 @@
       ],
       "source": "facebook.com",
       "relatedArticles": [
-        { "title": "Related Article 1", "description": "Short description of related article 1", "link": "https://example.com/related1",id:1 },
-        { "title": "Related Article 2", "description": "Short description of related article 2", "link": "https://example.com/related2",id:1 },
-        { "title": "Related Article 3", "description": "Short description of related article 3", "link": "https://example.com/related3",id:1 }
+        { "id": 2 },
+        { "id": 3 },
+        { "id": 4 }
       ]
+    },
+    {
+      "id": 2,
+      "title": "Related Article 1",
+      "thumbnail": "https://example.com/image2.jpg",
+      "extract": "Short description of related article 1.",
+      "link": "https://example.com/related1"
+    },
+    {
+      "id": 3,
+      "title": "Related Article 2",
+      "thumbnail": "https://example.com/image3.jpg",
+      "extract": "Short description of related article 2.",
+      "link": "https://example.com/related2"
+    },
+    {
+      "id": 4,
+      "title": "Related Article 3",
+      "thumbnail": "https://example.com/image4.jpg",
+      "extract": "Short description of related article 3.",
+      "link": "https://example.com/related3"
     }
   ]
 }
