@@ -1,22 +1,22 @@
 {
   "articles": [
     {
-      "title": "Example Title 1",
+      "id": 1,
+      "title": "Article Title 1",
       "thumbnail": "https://example.com/image1.jpg",
-      "extract": "This is the first article's brief description.",
-      "link": "https://example.com/article1"
-    },
-    {
-      "title": "Example Title 2",
-      "thumbnail": "",
-      "extract": "This is the second article's brief description.",
-      "link": "https://example.com/article2"
-    },
-    {
-      "title": "Example Title 3",
-      "thumbnail": "https://example.com/image3.jpg",
-      "extract": "This is the third article's brief description.",
-      "link": "https://example.com/article3"
+      "extract": "Short description of article 1.",
+      "link": "https://example.com/full-article1",
+      "detailedDescription": "This is the detailed description of the first article. It includes more background and insights.",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Aliquam sit amet neque id erat aliquam dictum."
+      ],
+      "source": "facebook.com",
+      "relatedArticles": [
+        { "title": "Related Article 1", "description": "Short description of related article 1", "link": "https://example.com/related1" },
+        { "title": "Related Article 2", "description": "Short description of related article 2", "link": "https://example.com/related2" },
+        { "title": "Related Article 3", "description": "Short description of related article 3", "link": "https://example.com/related3" }
+      ]
     }
   ]
 }
