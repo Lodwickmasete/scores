@@ -13,9 +13,9 @@
       ],
       "source": "facebook.com",
       "relatedArticles": [
-        { "title": "Related Article 1", "description": "Short description of related article 1", "link": "https://example.com/related1" },
-        { "title": "Related Article 2", "description": "Short description of related article 2", "link": "https://example.com/related2" },
-        { "title": "Related Article 3", "description": "Short description of related article 3", "link": "https://example.com/related3" }
+        { "title": "Related Article 1", "description": "Short description of related article 1", "link": "https://example.com/related1",id:1 },
+        { "title": "Related Article 2", "description": "Short description of related article 2", "link": "https://example.com/related2",id:1 },
+        { "title": "Related Article 3", "description": "Short description of related article 3", "link": "https://example.com/related3",id:1 }
       ]
     }
   ]
